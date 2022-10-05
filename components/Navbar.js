@@ -15,7 +15,7 @@ function Navbar () {
   return (
     <div>
     <div className='fixed z-[100] flex md:justify-evenly items-center justify-between w-full h-20 px-2 2xl:px-16 bg-black'>
-          <Link href='/'>
+          <Link className="cursor-pointer" to="/">
           <a>
             <Image
               src="/Logo.png"
@@ -32,7 +32,7 @@ function Navbar () {
             <Link className="cursor-pointer" acticeClass ="active" to='about' spy={true} smooth={true} offset={-70} duration={500}>About</Link>
             </li>
             <li className='ml-10 text-2xl uppercase hover:text-white'>
-              <Link className="cursor-pointer" href='/mint'>Mint</Link>
+              <Link className="cursor-pointer" to='/mint'>Mint</Link>
             </li>
             <li className='ml-10 text-2xl uppercase hover:text-white'>
               <Link className="cursor-pointer" acticeClass ="active" to='roadmap' spy={true} smooth={true} offset={-70} duration={500}>Roadmap</Link>
@@ -124,7 +124,7 @@ function Navbar () {
       :'fixed left-[-100%] top-0 p-10 ease-in duration-500 h-screen'
       }>
       <div className='flex w-full items-center justify-between'>
-      <Link href='/'>
+      <Link className="cursor-pointer" to='/'>
                 <a>
                   <Image
                     src="/Logoicon.png"
@@ -151,7 +151,7 @@ function Navbar () {
             <Link onClick={() => setNav(false)}  className="cursor-pointer" acticeClass ="active" to='about' spy={true} smooth={true} offset={-70} duration={500}>About</Link>
             </li>
             <li  className='py-4 text-sm hover:text-white'>
-              <Link onClick={() => setNav(false)} href='/mint'>Mint</Link>
+              <Link onClick={() => setNav(false)} className="cursor-pointer" to='/mint'>Mint</Link>
             </li>
             <li  className='py-4 text-sm hover:text-white'>
             <Link onClick={() => setNav(false)} className="cursor-pointer" acticeClass ="active" to='roadmap' spy={true} smooth={true} offset={-70} duration={500}>Roadmap</Link>
