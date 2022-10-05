@@ -15,7 +15,7 @@ function Navbar () {
   return (
     <div>
     <div className='fixed z-[100] flex md:justify-evenly items-center justify-between w-full h-20 px-2 2xl:px-16 bg-black'>
-          <Link className="cursor-pointer" to="/">
+          <Link className="cursor-pointer" acticeClass ="active" to='home' spy={true} smooth={true} duration={500}>
           <a>
             <Image
               src="/Logo.png"
@@ -124,7 +124,7 @@ function Navbar () {
       :'fixed left-[-100%] top-0 p-10 ease-in duration-500 h-screen'
       }>
       <div className='flex w-full items-center justify-between'>
-      <Link className="cursor-pointer" to='/'>
+      <Link className="cursor-pointer" acticeClass ="active" to='home' spy={true} smooth={true} duration={500}>
                 <a>
                   <Image
                     src="/Logoicon.png"
