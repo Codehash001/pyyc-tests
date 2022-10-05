@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import Navbar from '../components/Navbar';
 import Main from '../components/Main';
-import About from '../componentss/About';
+import About from '../components/About';
 import Roadmap from '../components/Roadmap';
 import Team from '../components/Team';
 import Footer from '../components/Footer';
