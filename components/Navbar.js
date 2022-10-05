@@ -16,7 +16,7 @@ function Navbar () {
     <div>
     <div className='fixed z-[100] flex md:justify-evenly items-center justify-between w-full h-20 px-2 2xl:px-16 bg-black'>
           <Link className="cursor-pointer" to="/">
-          <a>
+          <a href='/'>
             <Image
               src="/Logo.png"
               alt='/'
